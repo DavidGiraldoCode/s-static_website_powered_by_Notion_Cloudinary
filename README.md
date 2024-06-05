@@ -19,9 +19,17 @@ This integration will be client-only
 - Having troubles with reading .env variables in React. I will use notionConfig.js in the meantime and disregarded with .gitignore
 ```javascript
 const notionConfig = {
-    REACT_APP_NOTION_KEY: "....",
-    authDomain: "...."
+    NOTION_ACCESS_TOKEN: "....",
+    NOTION_DATABASE_ID: "...."
 };
 export default notionConfig;
 ```
 https://www.npmjs.com/package/dotenv
+
+- Created the Notion page as an empty (fullpage) database, [here they explain how to query it](https://developers.notion.com/reference/retrieve-a-database).
+
+- Got a CORS error when trying to request a database, the Notion team [replied](https://github.com/makenotion/notion-sdk-js/issues/458#issuecomment-1743915685) to this matter:
+>"Due to security concerns of exposing API tokens in the browser, Notion public API requests aren't able to be made from a web browser. You'll have to make the requests server side and then send the results to the browser. Apologies for any inconvenience."
+
+# Next steps
+[ ] Try implementing the API calls from Firebase

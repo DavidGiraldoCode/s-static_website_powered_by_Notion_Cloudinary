@@ -19,13 +19,11 @@ const app = initializeApp(firebaseConfig);
 
 import { Client } from '@notionhq/client';
 
-const notion = new Client({ auth: notionConfig.NOTION_API_KEY });
+const notion = new Client({ auth: notionConfig.NOTION_ACCESS_TOKEN });
 
 (async () => {
-  const blockId = notionConfig.REACT_APP_NOTION_PAGE_ID;
-  const response = await notion.blocks.retrieve({
-    block_id: blockId,
-  });
+  const databaseId = notionConfig.NOTION_DATABASE_ID;
+  const response = await notion.databases.retrieve({ database_id: databaseId });
   console.log(response);
 })();
 
