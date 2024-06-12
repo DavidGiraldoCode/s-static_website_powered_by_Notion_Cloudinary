@@ -16,6 +16,15 @@ This integration will be client-only
 
 
 # DevLog
+- 12 06 2024: Created integration with Vercel: They offer a template with Node.js. The process creates a private repo on my GitHub and deploys it to the web. The source code is written in TypeScript.
+
+- Steps:
+- Created /app directory
+- Added index.ts, and included code.
+- Installed Express
+- Added vercel.json
+- deploy locally
+
 - Got a CORS error when trying to request a database, the Notion team [replied](https://github.com/makenotion/notion-sdk-js/issues/458#issuecomment-1743915685) to this matter:
 >"Due to security concerns of exposing API tokens in the browser, Notion public API requests aren't able to be made from a web browser. You'll have to make the requests server side and then send the results to the browser. Apologies for any inconvenience."
 - Created the Notion page as an empty (fullpage) database, [here they explain how to query it](https://developers.notion.com/reference/retrieve-a-database).
