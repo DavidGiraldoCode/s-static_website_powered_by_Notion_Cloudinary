@@ -1,11 +1,62 @@
 # s-static_website_powered_by_Notion_-Cloudinary
 Exploring how to leverage Notion as a CMS and Cloudinary from a static website hosted on Firebase
 
+# Model-View-Presenter pattern
+This project follows a MVP patter to separate concerns within an application.
+```
+Model
+├── Holds the ProjectCollection object as a member variable, fetched from the API.
+└── Holds a member variable called projectOnFocus = null, that is set to ProjectExtendedInfo when the API returns the request
+
+<App/>
+├── > propsDown: Model
+├── < eventsUp: 
+└── <Router>
+    ├── > propsDown: Model
+    ├── /projects
+    ├── /project?id:&key:
+
+<ProjectCollectionPresenter collection />
+├── Takes the ProjectCollection object and builds the project grid
+└── <ProjectSelectorPresenter projectPreview />
+    ├── Handles request to the API to set the projectOnFocus
+    ├── Set the route to /project?id=12345&key=123, <ProjectExtendedInfoPresenter/>
+    └── <ProjectCardView projectPreview onClick/>
+
+<ProjectExtendedInfoPresenter/>
+├── > propsDown: projectPreview
+├── If the projectPreview protected == true, renders the <ProtectedProjectPresenter/>
+├── <ProtectedProjectPresenter />
+│   ├── > propsDown: projectPreview
+│   ├── < eventUp: onValidKey() Flags the <ProjectExtendedInfoPresenter/> that the request is valid
+│   └── Handles the request to the API using the inputed key 
+└── <ProjectExtendedInfoView>
+    ├── > propsDown: ProjectExtendedInfo
+    ├── < eventsUp: 
+    ├── Render and laysout all the HTML custom components that come from the project blocks
+    ├── <Heading1 text/>
+    ├── <Heading2 text/>
+    ├── <Heading3 text/>
+    ├── <Paragraph text/>
+    ├── <Quote text/>
+    ├── <ListItem items[]/>
+    └── <Embed url/>
+
+
+<ProjectSelectorPresenter>
+├── Listen for click event to change the projectOnFocus
+
+ProjectCardView
+
+```
+
 # Next steps
-[ ] Review race conditions with async await and handling loading states
-[ ] Create the
-[x] Try implementing the API calls from Firebase - Update, it cost, looking for free alternatives.
-[x] Research about implementing the [API and Functions](https://youtu.be/yLMODEUPJdU?si=YQ2nGSrJl3VbVOGo) on Vercel, here some links: [REST API](https://vercel.com/docs/rest-api) and [Functions API Reference](https://vercel.com/docs/functions/functions-api-reference).
+- [ ] Create API call to projectExtendedInfo
+- [ ] Handle case for protected projets, <ProtectedProjectPresenter/>
+- [ ] Review race conditions with async await and handling loading states
+- [x] Create the model
+- [x] Try implementing the API calls from Firebase - Update, it cost, looking for free alternatives.
+- [x] Research about implementing the [API and Functions](https://youtu.be/yLMODEUPJdU?si=YQ2nGSrJl3VbVOGo) on Vercel, here some links: [REST API](https://vercel.com/docs/rest-api) and [Functions API Reference](https://vercel.com/docs/functions/functions-api-reference).
 
 # DevLog
 - 24 06 2024: Vercel API is working. I can retrieve a list of projects and a project content. This program knows nothing about Notion. Vercel serverless function handels that implementation.
