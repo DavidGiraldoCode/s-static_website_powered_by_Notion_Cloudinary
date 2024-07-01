@@ -3,14 +3,46 @@ import { observer } from "mobx-react-lite";
 import './App.css';
 import ProjectCollectionPresenter from './Presenters/ProjectCollectionPresenter';
 import SuspenseStateView from './Views/SuspenseStateView';
+import ProjectExtendedInfoPresenter from './Presenters/ProjectExtendedInfoPresenter';
+//TODO ReactRouter
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
+//TODO TankStack
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
+
+//TODO RECALL that protected projects will firts take the use to the form. 
+//?
 function App(props) {
-  const [count, setCount] = useState(0);
+  const makeRouter = (model) => createBrowserRouter([
+    {
+      path: "/project/:id",
+      element: <ProjectExtendedInfoPresenter model={props.model}/>,
+    },
+    {
+      path: "/project/:id/:key",
+      element: <ProjectExtendedInfoPresenter model={props.model}/>,
+    },
+  ]);
 
   return (
-    <div className='app'>
-      {props.model.projectsCollection == null ? <SuspenseStateView /> : <ProjectCollectionPresenter collection={props.model.projectsCollection} />}
-    </div>
+    <QueryClientProvider client={queryClient}>
+      {/* The rest of your application 
+      <div className='app'>
+        {props.model.projectsCollection == null ? <SuspenseStateView /> : <ProjectCollectionPresenter collection={props.model.projectsCollection} />}
+      </div>*/}
+      <RouterProvider router={makeRouter(props.model)} />
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   );
 }
 

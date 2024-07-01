@@ -14,7 +14,7 @@ const app = initializeApp(firebaseConfig);
 import { observable, configure, reaction } from "mobx";
 configure({ enforceActions: "never", });  // we don't use Mobx actions
 
-await portfolioModel.requestProjectCollection();
+//await portfolioModel.requestProjectCollection();
 const reactiveModel = observable(portfolioModel);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
