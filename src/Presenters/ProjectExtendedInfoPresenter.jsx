@@ -6,9 +6,10 @@ import {
 
 function ProjectExtendedInfoPresenter(props) {
     const { id, key } = useParams();
-    console.log(id, key);
-    const URL = "https://s-nodejs-serverless-func-notion-cms.vercel.app/api/project?id=47f64375-b558-46af-b09d-4620f1181ceb&key";//`https://s-nodejs-serverless-func-notion-cms.vercel.app/api/project?id=${id}&key=${key}`;
-
+    
+    const URL = `https://s-nodejs-serverless-func-notion-cms.vercel.app/api/project?id=${id}&key=${key != undefined ? key : ""}`;
+    //"https://s-nodejs-serverless-func-notion-cms.vercel.app/api/project?id=47f64375-b558-46af-b09d-4620f1181ceb&key";
+    console.log(`Fetching from: ${URL}`);
     async function getProject() {
         const response = await fetch(URL);
         if (!response.ok)

@@ -4,6 +4,11 @@ import './App.css';
 import ProjectCollectionPresenter from './Presenters/ProjectCollectionPresenter';
 import SuspenseStateView from './Views/SuspenseStateView';
 import ProjectExtendedInfoPresenter from './Presenters/ProjectExtendedInfoPresenter';
+//TODO ReactRouter
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 //TODO TankStack
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
@@ -16,7 +21,12 @@ import {
 const queryClient = new QueryClient();
 
 function App(props) {
-  const [count, setCount] = useState(0);
+  const makeRouter = (model) => createBrowserRouter([
+    {
+      path: "/project/:id",
+      element: <ProjectExtendedInfoPresenter model={props.model}/>,
+    },
+  ]);
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -24,7 +34,7 @@ function App(props) {
       <div className='app'>
         {props.model.projectsCollection == null ? <SuspenseStateView /> : <ProjectCollectionPresenter collection={props.model.projectsCollection} />}
       </div>*/}
-      <ProjectExtendedInfoPresenter/>
+      <RouterProvider router={makeRouter(props.model)} />
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
