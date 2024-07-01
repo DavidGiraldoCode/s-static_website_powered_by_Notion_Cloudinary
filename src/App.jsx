@@ -7,6 +7,7 @@ import ProjectExtendedInfoPresenter from './Presenters/ProjectExtendedInfoPresen
 //TODO ReactRouter
 import {
   createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
@@ -21,18 +22,31 @@ import {
 const queryClient = new QueryClient();
 
 //TODO RECALL that protected projects will firts take the use to the form. 
+// For now, the URL with the key can work as a sharable free-access link
 //?
 function App(props) {
-  const makeRouter = (model) => createBrowserRouter([
-    {
-      path: "/project/:id",
-      element: <ProjectExtendedInfoPresenter model={props.model}/>,
-    },
-    {
-      path: "/project/:id/:key",
-      element: <ProjectExtendedInfoPresenter model={props.model}/>,
-    },
-  ]);
+
+  function makeRouter(model) {
+    //TODO createBrowserRouter
+    return createHashRouter([
+      {
+        path: "/",
+        element: <ProjectCollectionPresenter collection={model?.projectsCollection} />,
+      },
+      {
+        path: "/0",
+        element: <h1>Zero</h1>,
+      },
+      {
+        path: "/project/:id",
+        element: <ProjectExtendedInfoPresenter model={model} />,
+      },
+      {
+        path: "/project/:id/:key",
+        element: <ProjectExtendedInfoPresenter model={model} />,
+      },
+    ]);
+  }
 
   return (
     <QueryClientProvider client={queryClient}>
