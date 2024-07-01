@@ -3,14 +3,30 @@ import { observer } from "mobx-react-lite";
 import './App.css';
 import ProjectCollectionPresenter from './Presenters/ProjectCollectionPresenter';
 import SuspenseStateView from './Views/SuspenseStateView';
+import ProjectExtendedInfoPresenter from './Presenters/ProjectExtendedInfoPresenter';
+
+//TODO TankStack
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function App(props) {
   const [count, setCount] = useState(0);
 
   return (
-    <div className='app'>
-      {props.model.projectsCollection == null ? <SuspenseStateView /> : <ProjectCollectionPresenter collection={props.model.projectsCollection} />}
-    </div>
+    <QueryClientProvider client={queryClient}>
+      {/* The rest of your application 
+      <div className='app'>
+        {props.model.projectsCollection == null ? <SuspenseStateView /> : <ProjectCollectionPresenter collection={props.model.projectsCollection} />}
+      </div>*/}
+      <ProjectExtendedInfoPresenter/>
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   );
 }
 
