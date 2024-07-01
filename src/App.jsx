@@ -20,10 +20,16 @@ import {
 
 const queryClient = new QueryClient();
 
+//TODO RECALL that protected projects will firts take the use to the form. 
+//?
 function App(props) {
   const makeRouter = (model) => createBrowserRouter([
     {
       path: "/project/:id",
+      element: <ProjectExtendedInfoPresenter model={props.model}/>,
+    },
+    {
+      path: "/project/:id/:key",
       element: <ProjectExtendedInfoPresenter model={props.model}/>,
     },
   ]);

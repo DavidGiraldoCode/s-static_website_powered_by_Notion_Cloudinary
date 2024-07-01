@@ -6,9 +6,8 @@ import {
 
 function ProjectExtendedInfoPresenter(props) {
     const { id, key } = useParams();
-    
-    const URL = `https://s-nodejs-serverless-func-notion-cms.vercel.app/api/project?id=${id}&key=${key != undefined ? key : ""}`;
-    //"https://s-nodejs-serverless-func-notion-cms.vercel.app/api/project?id=47f64375-b558-46af-b09d-4620f1181ceb&key";
+
+    const URL = `https://s-nodejs-serverless-func-notion-cms.vercel.app/api/project?id=${id}${key != undefined ? "&key=" + key : "&key"}`;
     console.log(`Fetching from: ${URL}`);
     async function getProject() {
         const response = await fetch(URL);
@@ -21,7 +20,7 @@ function ProjectExtendedInfoPresenter(props) {
         queryKey: [`project`],
         queryFn: getProject,
     });
-
+    console.log(error);
     if (isPending)
         return (<SuspenseStateView loading={true} />)
     if (isError)
