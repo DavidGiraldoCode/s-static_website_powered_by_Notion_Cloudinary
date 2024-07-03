@@ -1,0 +1,5 @@
+.callout {
+    background-color: var(--main-black);
+    padding-top: var(--spacing-lx);
+    padding-bottom: var(--spacing-lx);
+}

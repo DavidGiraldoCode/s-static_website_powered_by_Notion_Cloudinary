@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { observer } from "mobx-react-lite";
-import './App.css';
+//import './App.css';
 import ProjectCollectionPresenter from './Presenters/ProjectCollectionPresenter';
 import SuspenseStateView from './Views/SuspenseStateView';
 import ProjectExtendedInfoPresenter from './Presenters/ProjectExtendedInfoPresenter';
+import LayOutSandBox from './Presenters/LayOutSandBox';
 //TODO ReactRouter
 import {
   createBrowserRouter,
@@ -45,18 +46,22 @@ function App(props) {
         path: "/project/:id/:key",
         element: <ProjectExtendedInfoPresenter model={model} />,
       },
+      {
+        path: "/project/sanbox",
+        element: <LayOutSandBox model={model} />,
+      },
     ]);
   }
 
   return (
-    <QueryClientProvider client={queryClient}>
-      {/* The rest of your application 
+      <QueryClientProvider client={queryClient}>
+        {/* The rest of your application 
       <div className='app'>
         {props.model.projectsCollection == null ? <SuspenseStateView /> : <ProjectCollectionPresenter collection={props.model.projectsCollection} />}
       </div>*/}
-      <RouterProvider router={makeRouter(props.model)} />
-      <ReactQueryDevtools initialIsOpen={false} />
-    </QueryClientProvider>
+        <RouterProvider router={makeRouter(props.model)} />
+        <ReactQueryDevtools initialIsOpen={false} />
+      </QueryClientProvider>
   );
 }
 
