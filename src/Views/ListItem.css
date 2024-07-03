@@ -1,0 +1,9 @@
+.bullet_point_row{
+    display: flex;
+    flex-direction: row;
+}
+.bullet_point{
+    width: var(--spacing-s);
+    margin-right: var(--spacing-s);
+    height: 100%;
+}
