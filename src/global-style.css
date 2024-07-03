@@ -221,6 +221,17 @@ p {
     font-style: normal;
     font-weight: 400;
 }
+li {
+    letter-spacing: normal;
+    font-family: "Lato", sans-serif;
+    font-size: var(--fs-p1);
+    /*0.875rem*/
+    line-height: var(--lh-p1);
+    /*1.25rem*/
+    color: var(--grey-4);
+    font-style: normal;
+    font-weight: 400;
+}
 
 label {
     font-family: 'Poppins', sans-serif;
@@ -415,6 +426,10 @@ textarea:not(:placeholder-shown) {
 
 .m-top-m {
     margin-top: var(--spacing-l);
+}
+
+.m-top-s {
+    margin-top: var(--spacing-s);
 }
 
 .m-bottom-l {
