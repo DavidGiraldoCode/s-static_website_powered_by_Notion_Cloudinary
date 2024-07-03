@@ -51,9 +51,14 @@ ProjectCardView
 ```
 
 # Next steps
-- [ ] Create API call to projectExtendedInfo
-- [ ] Handle case for protected projets, <ProtectedProjectPresenter/>
-- [ ] Review race conditions with async await and handling loading states
+- [ ] Add Fixed labels on edges _david_, _portfolio_, _2024_
+- [ ] Use custom domain `david.design` from porkhunt
+- [ ] Create <WhiteSpace> componets for better readability
+- [ ] Tinker with font styles
+- [ ] Design the layout and visuals of the suspense state
+- [x] Create API call to projectExtendedInfo
+- [x] Handle case for protected projets, <ProtectedProjectPresenter/>
+- [x] Review race conditions with async await and handling loading states -> Solved with TanStack.
 - [x] Create the model
 - [x] Try implementing the API calls from Firebase - Update, it cost, looking for free alternatives.
 - [x] Research about implementing the [API and Functions](https://youtu.be/yLMODEUPJdU?si=YQ2nGSrJl3VbVOGo) on Vercel, here some links: [REST API](https://vercel.com/docs/rest-api) and [Functions API Reference](https://vercel.com/docs/functions/functions-api-reference).
