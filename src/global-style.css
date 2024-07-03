@@ -1,5 +1,5 @@
 @import url('./reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=Lato&display=swap');
 
 * {
     box-sizing: border-box;
@@ -175,6 +175,17 @@ h1 {
     color: var(--main-black);
     font-style: normal;
     font-weight: 400;
+}
+
+.callout_h1 {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    /*2rem;*/
+    color: var(--main-white);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.03em;
 }
 
 h2 {

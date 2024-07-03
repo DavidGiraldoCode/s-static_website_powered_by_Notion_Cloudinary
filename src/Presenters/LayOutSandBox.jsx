@@ -4,6 +4,7 @@ import Heading2 from "../Views/Heading2";
 import Heading3 from "../Views/Heading3";
 import Paragraph from "../Views/Paragraph";
 import ListItem from "../Views/ListItem";
+import Callout from "../Views/Callout";
 import "../global-style.css";
 import "./LayOutSandBox.css";
 import BLOCK_LAYOUT from "../BlocksEmun";
@@ -12,24 +13,23 @@ function LayOutSandBox(props) {
 
     props.model.projectsCollection = data;
 
-    function blockRendererCB(block) {
+    function blockRendererCB(block, i) {
         switch (block.type) {
             case BLOCK_LAYOUT.HEADING_1:
-                return <Heading1 text={block.plain_text} />
+                return <Heading1 key = {i} text={block.plain_text} />
             case BLOCK_LAYOUT.HEADING_2:
-                return <Heading2 text={block.plain_text} />
+                return <Heading2 key = {i}  text={block.plain_text} />
             case BLOCK_LAYOUT.HEADING_3:
-                return <Heading3 text={block.plain_text} />
+                return <Heading3 key = {i}  text={block.plain_text} />
             case BLOCK_LAYOUT.PARAGRAPH:
-                return <Paragraph text={block.plain_text} />
+                return <Paragraph key = {i}  text={block.plain_text} />
             case BLOCK_LAYOUT.LIST_ITEM:
-                return (<span>List Items Pending ⚠️</span>)
+                return block?.list_items.map( (item, j) => <ListItem key = {`${i}_${j}`} text={item} />);
             case BLOCK_LAYOUT.EMBED:
                 return (<span>Embed Pending ⚠️</span>)
             case BLOCK_LAYOUT.CALLOUT:
-                return (<span>Callout Pending ⚠️</span>)
+                return <Callout key = {i}  text={block.plain_text}/>
         }
-
     }
 
     return (
