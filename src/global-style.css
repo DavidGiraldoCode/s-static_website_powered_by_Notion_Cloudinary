@@ -1,5 +1,5 @@
 @import url('./reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Lato&display=swap');
 
 * {
     box-sizing: border-box;
@@ -57,6 +57,12 @@
     --spacing-lxx: 40px;
     --spacing-lxxx: 48px;
     --spacing-j: 56px;
+    
+
+    /** --------------------------------- Notion ProjectExtendedInfo*/
+    --width-m: 800px;
+
+    /** --------------------------------- /
 
     /**/
     --base-font-size: 16px;
@@ -103,9 +109,9 @@
     letter-spacing: .05rem;
 
     color-scheme: light dark;
-    color: var(--main-white);
+    color: var(--main-black);
     /* rgba(255, 255, 255, 0.87);*/
-    background-color: var(--main-1);
+    background-color: var(--main-white);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -114,7 +120,7 @@
 }
 
 body {
-    font-family: 'Paytone One', sans-serif;
+    font-family: "Kaisei Decol", serif;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -126,7 +132,7 @@ body {
     /* height: 100vw; */
 }
 
-#app {
+#root {
     /*main.jsx, where we bootstrap the app*/
     /*
     max-width: 1280px;
@@ -143,10 +149,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center; /*flex-start;*/
     align-self: stretch;
     padding: 0;
     margin: 0;
+}
+
+.text_column{
+    width: 800px;
 }
 
 /*
@@ -162,7 +172,7 @@ h1 {
     line-height: var(--lh-h1);
     /*2rem;*/
 
-    color: var(--main-white);
+    color: var(--main-black);
     font-style: normal;
     font-weight: 400;
 }
@@ -173,7 +183,7 @@ h2 {
     line-height: var(--lh-h2);
     /*2rem*/
 
-    color: var(--main-white);
+    color: var(--main-black);
     font-style: normal;
     font-weight: 400;
 }
@@ -184,7 +194,7 @@ h3 {
     line-height: var(--lh-h3);
     /*1.5rem*/
 
-    color: var(--main-white);
+    color: var(--main-black);
     font-style: normal;
     font-weight: 400;
 }
@@ -195,19 +205,19 @@ h4 {
     line-height: var(--lh-h4);
     /*1.25rem*/
 
-    color: var(--main-white);
+    color: var(--main-black);
     font-style: normal;
     font-weight: 700;
 }
 
 p {
     letter-spacing: normal;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: var(--fs-p1);
     /*0.875rem*/
     line-height: var(--lh-p1);
     /*1.25rem*/
-    color: var(--main-white);
+    color: var(--grey-4);
     font-style: normal;
     font-weight: 400;
 }
@@ -400,7 +410,7 @@ textarea:not(:placeholder-shown) {
 }
 
 .m-top-l {
-    margin-top: var(--spacing-lxxx);
+    margin-top: var(--spacing-lx);
 }
 
 .m-top-m {
@@ -408,7 +418,7 @@ textarea:not(:placeholder-shown) {
 }
 
 .m-bottom-l {
-    margin-bottom: var(--spacing-lxxx);
+    margin-bottom: var(--spacing-lx);
 }
 
 .m-bottom-m {
