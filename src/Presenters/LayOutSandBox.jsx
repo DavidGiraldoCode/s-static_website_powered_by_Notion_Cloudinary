@@ -5,6 +5,7 @@ import Heading3 from "../Views/Heading3";
 import Paragraph from "../Views/Paragraph";
 import ListItem from "../Views/ListItem";
 import Callout from "../Views/Callout";
+import Image from "../Views/Image";
 import "../global-style.css";
 import "./LayOutSandBox.css";
 import BLOCK_LAYOUT from "../BlocksEmun";
@@ -25,8 +26,8 @@ function LayOutSandBox(props) {
                 return <Paragraph key = {i}  text={block.plain_text} />
             case BLOCK_LAYOUT.LIST_ITEM:
                 return block?.list_items.map( (item, j) => <ListItem key = {`${i}_${j}`} text={item} />);
-            case BLOCK_LAYOUT.EMBED:
-                return (<span>Embed Pending ⚠️</span>)
+            case BLOCK_LAYOUT.IMAGE:
+                return <Image key = {i}  url={block.url}/>
             case BLOCK_LAYOUT.CALLOUT:
                 return <Callout key = {i}  text={block.plain_text}/>
         }

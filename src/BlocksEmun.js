@@ -5,6 +5,6 @@ const BLOCK_LAYOUT = Object.freeze({
     PARAGRAPH : "paragraph",
     LIST_ITEM : "list_item",
     CALLOUT : "callout",
-    EMBED : 'embed'
+    IMAGE : 'image'
 })
 export default BLOCK_LAYOUT;
