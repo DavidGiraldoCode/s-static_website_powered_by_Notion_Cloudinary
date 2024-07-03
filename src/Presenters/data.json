@@ -16,7 +16,7 @@
 	"contentBlocks": [
 		{
 			"type": "heading_1",
-			"plain_text": "LOL-WildRift Virtual Challenge Platform"
+			"plain_text": "LOL-WildRift Virtual Challenge Platform "
 		},
 		{
 			"type": "paragraph",
@@ -79,6 +79,10 @@
 			"plain_text": "Project overview"
 		},
 		{
+			"type": "image",
+			"url": "https://res.cloudinary.com/dcqernk4m/image/upload/v1720013949/portfolio/sidemissions_process_overview_ha38fz.jpg"
+		},
+		{
 			"type": "paragraph",
 			"plain_text": "Over the course of three mouths I undertook research, benchmark analysis and concept design responsibilities, to clarify: What factors constitute the Latin American gaming ecosystem? / How does a non-gaming brand can engage with this audience? / How does food consumption is related with gaming?"
 		},
@@ -89,6 +93,10 @@
 		{
 			"type": "paragraph",
 			"plain_text": "There is a lot to talk about what I learned from this research, so let us dive deeper into some of my most interesting findings:"
+		},
+		{
+			"type": "image",
+			"url": "https://res.cloudinary.com/dcqernk4m/image/upload/v1720013948/portfolio/sidemissions_keylearnings_pycq72.jpg"
 		},
 		{
 			"type": "paragraph",
@@ -105,6 +113,10 @@
 		{
 			"type": "paragraph",
 			"plain_text": "We developed and presented several concepts to Coca-Cola, leveraging our previous learnings. Then, we selected the best concept that enabled connections and interactions between people through a gaming-related digital initiative."
+		},
+		{
+			"type": "image",
+			"url": "https://res.cloudinary.com/dcqernk4m/image/upload/v1720013948/portfolio/sidemissions_concep_l1xovb.jpg"
 		},
 		{
 			"type": "paragraph",
