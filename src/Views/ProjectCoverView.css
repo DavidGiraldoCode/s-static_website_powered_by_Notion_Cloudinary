@@ -1,0 +1,26 @@
+.project_cover_view {
+    height: 700px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cover_image{
+    width: 1240px;
+    position: absolute;
+    z-index: -1;
+}
+
+.cover_row {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cover_content_container {
+    color: var(--main-white);
+}
+
+.left,
+.right {
+    width: 400px;
+}

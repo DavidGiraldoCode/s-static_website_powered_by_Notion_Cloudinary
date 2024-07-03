@@ -9,10 +9,18 @@ import Image from "../Views/Image";
 import "../global-style.css";
 import "./LayOutSandBox.css";
 import BLOCK_LAYOUT from "../BlocksEmun";
+import ProjectCoverView from "../Views/ProjectCoverView";
 
 function LayOutSandBox(props) {
 
     props.model.projectsCollection = data;
+    const coverInfo = {
+        shortDescription: props.model.projectsCollection.shortDescription,
+        projectName: props.model.projectsCollection.projectName,
+        clients: props.model.projectsCollection.clients,
+        date: props.model.projectsCollection.date,
+        coverImage: props.model.projectsCollection.coverImage,
+    }
 
     function blockRendererCB(block, i) {
         switch (block.type) {
@@ -35,6 +43,7 @@ function LayOutSandBox(props) {
 
     return (
         <div className="layout_sand_box container">
+            <ProjectCoverView coverInfo = {coverInfo}/>
             {props.model.projectsCollection.contentBlocks.map(blockRendererCB)}
         </div>
     )
