@@ -3,6 +3,7 @@ import SuspenseStateView from "../Views/SuspenseStateView";
 import {
     useParams
 } from "react-router-dom";
+import ProjectExtendedInfoView from "../Views/ProjectExtendedInfoView";
 
 function ProjectExtendedInfoPresenter(props) {
     const { id, key } = useParams();
@@ -28,10 +29,14 @@ function ProjectExtendedInfoPresenter(props) {
 
     //https://s-nodejs-serverless-func-notion-cms.vercel.app/api/project?id=47f64375-b558-46af-b09d-4620f1181ceb&key
     return (
-        <div className="project_extended_info_presenter">
-            {data.contentBlocks.map(block => `${block.plain_text}`)}
-        </div>
+        <ProjectExtendedInfoView projectsCollection = {data}/>
+
     );
 
 }
 export default ProjectExtendedInfoPresenter;
+/*
+        <div className="project_extended_info_presenter">
+            {data.contentBlocks.map(block => `${block.plain_text}`)}
+        </div>
+*/

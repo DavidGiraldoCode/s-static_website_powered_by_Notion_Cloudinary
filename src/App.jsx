@@ -35,10 +35,6 @@ function App(props) {
         element: <ProjectCollectionPresenter collection={model?.projectsCollection} />,
       },
       {
-        path: "/0",
-        element: <h1>Zero</h1>,
-      },
-      {
         path: "/project/:id",
         element: <ProjectExtendedInfoPresenter model={model} />,
       },
@@ -55,10 +51,6 @@ function App(props) {
 
   return (
       <QueryClientProvider client={queryClient}>
-        {/* The rest of your application 
-      <div className='app'>
-        {props.model.projectsCollection == null ? <SuspenseStateView /> : <ProjectCollectionPresenter collection={props.model.projectsCollection} />}
-      </div>*/}
         <RouterProvider router={makeRouter(props.model)} />
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
@@ -66,20 +58,3 @@ function App(props) {
 }
 
 export default observer(App);
-/*
-<h1>Static Website 🚀</h1>
-      <div className="card">
-        <p>
-          Powered by Notion + Cloudinary
-        </p>
-        <button onClick={e => console.log("Click!")}>
-          Get Projects
-        </button>
-        <p>
-          
-        </p>
-      </div>
-<button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-*/
