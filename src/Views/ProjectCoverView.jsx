@@ -9,7 +9,7 @@ export default function ProjectCoverView(props) {
     const coverImageStyle = {
         backgroundImage: `url(${props.coverInfo.coverImage})`,
         backgroundPosition: 'center',
-        backgroundSize: '1240px 600px',
+        backgroundSize: '1240px',
         backgroundRepeat: 'no-repeat',
         backgroundColor: `#${props.coverInfo.backgroundColor}`
     };

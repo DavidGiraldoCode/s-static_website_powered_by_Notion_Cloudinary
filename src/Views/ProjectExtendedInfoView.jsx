@@ -13,7 +13,7 @@ import ProjectCoverView from "./ProjectCoverView";
 import FixedHeaderView from "./FixedHeaderView";
 
 function ProjectExtendedInfoView(props) {
-
+    const COVER_HEIGHT = 700;
     const coverInfo = {
         shortDescription: props.projectsCollection.shortDescription,
         projectName: props.projectsCollection.projectName,
@@ -46,7 +46,7 @@ function ProjectExtendedInfoView(props) {
 
     return (
         <div className="project_extended_info_view container">
-            <FixedHeaderView projectName={coverInfo.projectName}/>
+            <FixedHeaderView projectName={coverInfo.projectName} coverHeight={COVER_HEIGHT}/>
             <ProjectCoverView coverInfo={coverInfo} />
             {props.projectsCollection.contentBlocks.map(blockRendererCB)}
             <WhiteSpace />
