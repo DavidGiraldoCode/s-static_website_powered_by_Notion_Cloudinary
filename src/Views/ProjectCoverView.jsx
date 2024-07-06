@@ -11,7 +11,7 @@ export default function ProjectCoverView(props) {
         backgroundPosition: 'center',
         backgroundSize: '1240px 600px',
         backgroundRepeat: 'no-repeat',
-        backgroundColor: `#${"C53433"}`
+        backgroundColor: `#${props.coverInfo.backgroundColor}`
     };
     return (
         <div className="project_cover_view container" style={coverImageStyle}>
