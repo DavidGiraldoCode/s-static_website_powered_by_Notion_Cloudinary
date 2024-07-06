@@ -1,0 +1,22 @@
+.fixed_header_view{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: var(--grey-3);
+}
+.fixed_header_row{
+    padding-top: var(--spacing-m);
+    padding-bottom: var(--spacing-m);
+    padding-right: var(--spacing-l);
+    padding-left: var(--spacing-m);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fixed_header_view .header_top{
+    background-color: var(--main-white);
+}
