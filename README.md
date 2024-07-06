@@ -52,11 +52,12 @@ ProjectCardView
 
 # Next steps
 - [x] Add Fixed labels on edges _david_, _portfolio_, _2024_
+- [ ] Review and refactor useEffect and useState on FixedHeadersView
 - [ ] Note that fixed header are on top of everything, disabling highlighting and clicking.
-- [ ] Use custom domain `david.design` from porkhunt
+- [x] Use custom domain `david.design` from porkhunt
 - [x] Create <WhiteSpace> componets for better readability
 - [ ] Tinker with font styles
-- [ ] Design the layout and visuals of the suspense state
+- [x] Design the layout and visuals of the suspense state
 - [x] Create API call to projectExtendedInfo
 - [x] Handle case for protected projets, <ProtectedProjectPresenter/>
 - [x] Review race conditions with async await and handling loading states -> Solved with TanStack.
