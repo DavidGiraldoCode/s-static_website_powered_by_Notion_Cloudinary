@@ -51,9 +51,10 @@ ProjectCardView
 ```
 
 # Next steps
-- [ ] Add Fixed labels on edges _david_, _portfolio_, _2024_
+- [x] Add Fixed labels on edges _david_, _portfolio_, _2024_
+- [ ] Note that fixed header are on top of everything, disabling highlighting and clicking.
 - [ ] Use custom domain `david.design` from porkhunt
-- [ ] Create <WhiteSpace> componets for better readability
+- [x] Create <WhiteSpace> componets for better readability
 - [ ] Tinker with font styles
 - [ ] Design the layout and visuals of the suspense state
 - [x] Create API call to projectExtendedInfo
