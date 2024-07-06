@@ -1,0 +1,39 @@
+.suspense_state_view {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-black);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.suspense_state_view h1 {
+    text-align: center;
+    color: var(--main-white);
+}
+
+.suspense_state_view p {
+    text-align: center;
+    color: var(--main-white);
+}
+
+.gif_mask {
+    border-radius: 120px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.giphy-embed {
+    width: 240px;
+    height: 240px;
+}
+
+.giphy-embed iframe {
+    background-color: var(--main-black);
+    border: none;
+}

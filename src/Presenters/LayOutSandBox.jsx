@@ -10,6 +10,7 @@ import "../global-style.css";
 import "./LayOutSandBox.css";
 import BLOCK_LAYOUT from "../BlocksEmun";
 import ProjectCoverView from "../Views/ProjectCoverView";
+import SuspenseStateView from "../Views/SuspenseStateView";
 
 function LayOutSandBox(props) {
 
@@ -43,6 +44,7 @@ function LayOutSandBox(props) {
 
     return (
         <div className="layout_sand_box container">
+            <SuspenseStateView loading={true}/>
             <ProjectCoverView coverInfo = {coverInfo}/>
             {props.model.projectsCollection.contentBlocks.map(blockRendererCB)}
         </div>
