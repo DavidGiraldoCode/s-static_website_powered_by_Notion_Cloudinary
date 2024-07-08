@@ -11,6 +11,7 @@ import "./ProjectExtendedInfoView.css";
 import BLOCK_LAYOUT from "../BlocksEmun";
 import ProjectCoverView from "./ProjectCoverView";
 import FixedHeaderView from "./FixedHeaderView";
+import Thanks from "./Thanks";
 
 function ProjectExtendedInfoView(props) {
     const COVER_HEIGHT = 700;
@@ -49,6 +50,8 @@ function ProjectExtendedInfoView(props) {
             <FixedHeaderView projectName={coverInfo.projectName} coverHeight={COVER_HEIGHT}/>
             <ProjectCoverView coverInfo={coverInfo} />
             {props.projectsCollection.contentBlocks.map(blockRendererCB)}
+            <WhiteSpace />
+            <Thanks/>
             <WhiteSpace />
         </div>
     )

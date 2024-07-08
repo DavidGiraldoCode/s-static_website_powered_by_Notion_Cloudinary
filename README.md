@@ -56,7 +56,7 @@ ProjectCardView
 - [ ] Note that fixed header are on top of everything, disabling highlighting and clicking.
 - [x] Use custom domain `david.design` from porkhunt
 - [x] Create <WhiteSpace> componets for better readability
-- [ ] Tinker with font styles
+- [x] Tinker with font styles
 - [x] Design the layout and visuals of the suspense state
 - [x] Create API call to projectExtendedInfo
 - [x] Handle case for protected projets, <ProtectedProjectPresenter/>

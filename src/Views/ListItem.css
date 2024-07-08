@@ -7,3 +7,6 @@
     margin-right: var(--spacing-s);
     height: 100%;
 }
+.bullet_point circle{
+    fill: var(--grey-1);
+}
