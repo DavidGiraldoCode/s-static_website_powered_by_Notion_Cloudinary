@@ -1,7 +1,7 @@
 import "../global-style.css";
 import "./SuspenseStateView.css";
-import Paragraph from "./Paragraph";
-import Callout from "./Callout";
+import Paragraph from "../block_components/Paragraph";
+import Callout from "../block_components/Callout";
 export default function SuspenseStateView(props) {
 
     if (props.loading)

@@ -43,7 +43,7 @@ function App(props) {
         element: <ProjectExtendedInfoPresenter model={model} />,
       },
       {
-        path: "/project/sanbox",
+        path: "/projects/sandbox",
         element: <LayOutSandBox model={model} />,
       },
     ]);

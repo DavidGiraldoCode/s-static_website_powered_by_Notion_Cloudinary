@@ -1,188 +1,106 @@
-{
-	"shortDescription": "Helping The Coca-Cola Company understand and engage with the Gaming Ecosystem to boost user engagement through a web-app challenge platform for gamers",
-	"clients": [
-		"The Coca-Cola Company",
-		"Riot Games"
-	],
-	"date": "2024-06-20",
-	"projectId": "ec6d8204-4fad-494d-8e5e-6f45d99cc768",
-	"projectName": "Side Missions",
-	"tags": [
-		"UX/UI",
-		"Gaming"
-	],
-	"protected": true,
-	"order": 1,
-	"contentBlocks": [
-		{
-			"type": "heading_1",
-			"plain_text": "LOL-WildRift Virtual Challenge Platform "
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "Helping The Coca-Cola Company understand and engage with the Gaming Ecosystem to boost user engagement through a web-app challenge platform for gamers"
-		},
-		{
-			"type": "image",
-			"url": "https://res.cloudinary.com/dcqernk4m/image/upload/v1720011507/portfolio/sidemission_project_cover_a2yi0y.jpg"
-		},
-		{
-			"type": "heading_3",
-			"plain_text": "Intro"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "In 2021, The Coca-Cola Company embarked on a journey to explore innovative market opportunities within the gaming industry. The primary objectives included "
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "CAT 🐈"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "This first market research escalated into an "
-		},
-		{
-			"type": "list_item",
-			"list_items": [
-				"Brief 1: Discovering opportunities",
-				"Brief 2: Developing the experience"
-			]
-		},
-		{
-			"type": "heading_2",
-			"plain_text": "Brief 1: Discovering opportunities"
-		},
-		{
-			"type": "callout",
-			"plain_text": "Assist The Coca-Cola Company in understanding the gaming community's consumption needs and identifying partnership opportunities to enhance the experience while playing and foster lasting engagement."
-		},
-		{
-			"type": "heading_3",
-			"plain_text": "My role"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "On this first phase my contributions focused on:"
-		},
-		{
-			"type": "list_item",
-			"list_items": [
-				"Defining a clear research plan to that allowed us to understand the gaming community in Latam.",
-				"Analyzing the gaming ecosystem, identifying challenges in the consumption process, studying popular engagement trends.",
-				"Discovering meaningful insights that enabled us to make a positive impact on the gaming community in a natural way.",
-				"Leading the concept design refinement for a live demo."
-			]
-		},
-		{
-			"type": "heading_3",
-			"plain_text": "Project overview"
-		},
-		{
-			"type": "image",
-			"url": "https://res.cloudinary.com/dcqernk4m/image/upload/v1720013949/portfolio/sidemissions_process_overview_ha38fz.jpg"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "Over the course of three mouths I undertook research, benchmark analysis and concept design responsibilities, to clarify: What factors constitute the Latin American gaming ecosystem? / How does a non-gaming brand can engage with this audience? / How does food consumption is related with gaming?"
-		},
-		{
-			"type": "heading_3",
-			"plain_text": "Key findings"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "There is a lot to talk about what I learned from this research, so let us dive deeper into some of my most interesting findings:"
-		},
-		{
-			"type": "image",
-			"url": "https://res.cloudinary.com/dcqernk4m/image/upload/v1720013948/portfolio/sidemissions_keylearnings_pycq72.jpg"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "The concept of non-endemic brands accounts for companies not related to gaming: They seek to engage with gamers through well-known strategies like advergames, in-game advertising, or sponsorship (KFC being a top player). However, an underlying formula is needed to increase the chances of getting a positive response from the demanding gaming audience. I coined the strategy \"The gaming formula\" = EP + CC + EP *endemic partner + communication channel + enabler platform."
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "Food and gaming have a counterintuitive relationship: Since most dedicated gamers have high-end devices, there isn't much room for oily food, beverages, and food crumbs near their gaming area. Even when sweetened drinks are common for boosting energy among regular gamers. Interestingly, non-endemic food brands seek to enable connections and interactions between people through gaming-related initiatives instead of pairing the consumption and gaming moment together."
-		},
-		{
-			"type": "heading_3",
-			"plain_text": "Concept delivery"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "We developed and presented several concepts to Coca-Cola, leveraging our previous learnings. Then, we selected the best concept that enabled connections and interactions between people through a gaming-related digital initiative."
-		},
-		{
-			"type": "image",
-			"url": "https://res.cloudinary.com/dcqernk4m/image/upload/v1720013948/portfolio/sidemissions_concep_l1xovb.jpg"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "While the strategy team focused on the marketing and business definitions, I was responsible for designing and bringing to life the user experience for the final demo."
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "“Side Missions” featured a platform for gamers to overcome exclusive challenges on different games. Users upload their submissions on social media to gain coins, which they can use to get gaming gear, game passes, or skins."
-		},
-		{
-			"type": "heading_3",
-			"plain_text": "Wrapping up phase 1"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "Phase 1 concluded with a comprehensive market report, insights discovery, and conceptual proposal, which we developed more deeply in Phase 2. It does not happen every day that you get to work on such exciting topics, and I feel fortunate because this project made me fall in love with video games again."
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "…the journey has not ended yet, let us dive into the "
-		},
-		{
-			"type": "heading_2",
-			"plain_text": "Brief 2: Developing the experience"
-		},
-		{
-			"type": "callout",
-			"plain_text": "Bring to life a digital challenge platform tailored for LATAM gamers to enhance their gaming experience and enable The Coca-Cola Company to test market fit within this niche."
-		},
-		{
-			"type": "heading_3",
-			"plain_text": "My role"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "On this second phase my role shifted towards UX and product development, my functions encompassed various responsibilities over the four months of the project:"
-		},
-		{
-			"type": "list_item",
-			"list_items": [
-				"Commercial Proposal Design: Crafting the commercial proposal methodology and lay down the foundation for the initiative’s experience design.",
-				"User Experience Design Lead: Defining information architecture and user flows, leading visual branding, guiding fellow designers in building wireframes and prototypes, and overseeing the handoff process.",
-				"Handoff & UX QA: Conducting Design-Dev meetings with executives and developers to explain the platform, review the development work, and resolve UX-related issues.",
-				"Pilot’s UX Management: Managing content tracking and addressing UX bugs during the pilot phase."
-			]
-		},
-		{
-			"type": "heading_3",
-			"plain_text": "The solution"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "We delivered a end-to-end digital user experience, condensed in a mobile-first web app, that allowed The Coca-Cola Company to test their business hypothesis."
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "This collaborative effort culminated in a comprehensive handoff carried out in Figma. The handoff included a design system, visual guidelines for implementing banners, and detailed prototypes and wireframes to communicate the initiative's details. Additionally, we included a detailed roadmap with an implementation plan developed to facilitate the initiative's expansion across Latin America."
-		},
-		{
-			"type": "heading_3",
-			"plain_text": "Hand-off to development"
-		},
-		{
-			"type": "paragraph",
-			"plain_text": "At the final stage, I structured the handoff file system for development, guiding a fellow designer to elaborate a detailed documentation of interactions and user flows. As a creative technologist, I encourage designers to think of applications as data manipulation tools that transform information through time. In that way, we built consistent systems of user flows that were feasible for development."
-		}
-	],
-	"coverImage": "https://res.cloudinary.com/dcqernk4m/image/upload/v1720011507/portfolio/sidemission_project_cover_a2yi0y.jpg"
-}
+[
+	{
+		"shortDescription": "Algorithm to steer virtual birds using RBF interpolation of a vector field, aiming to create a more plausible and visually appealing result for video games.",
+		"clients": [
+			"Personal project"
+		],
+		"date": "2024-05-01",
+		"projectId": "85f0c1a3-f545-4031-a3af-bfc5c7fb8ecd",
+		"projectName": "Authoring crowd simulation algorithm",
+		"tags": [
+			"Gaming",
+			"Unity C#"
+		],
+		"protected": false,
+		"order": 3,
+		"color": "CEC8C5",
+		"previewThumbnailUrl": "https://cataas.com/cat"
+	},
+	{
+		"shortDescription": "Helping The Coca-Cola Company understand and engage with the Gaming Ecosystem",
+		"clients": [
+			"The Coca-Cola Company"
+		],
+		"date": "2022-05-01",
+		"projectId": "9cb5bc12-05c0-4ba9-9a5c-2a24199d129c",
+		"projectName": "Gaming ecosystem",
+		"tags": [
+			"UX/UI",
+			"Gaming"
+		],
+		"protected": true,
+		"order": 1,
+		"color": "6D179C",
+		"previewThumbnailUrl": "https://cataas.com/cat"
+	},
+	{
+		"shortDescription": "Play a first-person stealth game as John Hawking, a scientist imprisoned in a retro-futuristic facility after a failed experiment.",
+		"clients": [
+			"Personal project"
+		],
+		"date": "2024-05-01",
+		"projectId": "47f64375-b558-46af-b09d-4620f1181ceb",
+		"projectName": "“Lost to Time” stealth-based puzzle game",
+		"tags": [
+			"Gaming",
+			"Unity C#"
+		],
+		"protected": false,
+		"order": 3,
+		"color": "141414",
+		"previewThumbnailUrl": "https://cataas.com/cat"
+	},
+	{
+		"shortDescription": "Get a deck of cards and try to bluff your way out to be the first to discard all of them.",
+		"clients": [
+			"Personal project"
+		],
+		"date": "2023-12-01",
+		"projectId": "21878a3a-9a5b-47d2-8770-644154bd0056",
+		"projectName": "Bluffing cards mobile game",
+		"tags": [
+			"UX/UI",
+			"Web",
+			"ReactJS"
+		],
+		"protected": false,
+		"order": 4,
+		"color": "272944",
+		"previewThumbnailUrl": "https://cataas.com/cat"
+	},
+	{
+		"shortDescription": "Visualizing how autonomous stores can offer a user-friendly purchase experience.",
+		"clients": [
+			"OXXO - FEMSA"
+		],
+		"date": "2021-02-01",
+		"projectId": "b62818a9-644b-4b62-81b8-cce49719c945",
+		"projectName": "Autonomous \nPoint Of Sell",
+		"tags": [
+			"IoT",
+			"UX/UI"
+		],
+		"protected": true,
+		"order": 2,
+		"color": "f46b4fff",
+		"previewThumbnailUrl": "https://cataas.com/cat"
+	},
+	{
+		"shortDescription": "Designing a web-app challenge platform for mobile gamers.",
+		"clients": [
+			"The Coca-Cola Company",
+			"Riot Games"
+		],
+		"date": "2022-01-01",
+		"projectId": "ec6d8204-4fad-494d-8e5e-6f45d99cc768",
+		"projectName": "LOL-WildRift Virtual Challenge Platform",
+		"tags": [
+			"UX/UI",
+			"Gaming"
+		],
+		"protected": true,
+		"order": 1,
+		"color": "C53433",
+		"previewThumbnailUrl": "https://cataas.com/cat"
+	}
+]

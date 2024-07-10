@@ -1,16 +1,17 @@
 import data from "./data.json";
-import Heading1 from "../Views/Heading1";
-import Heading2 from "../Views/Heading2";
-import Heading3 from "../Views/Heading3";
-import Paragraph from "../Views/Paragraph";
-import ListItem from "../Views/ListItem";
-import Callout from "../Views/Callout";
-import Image from "../Views/Image";
+import Heading1 from "../block_components/Heading1";
+import Heading2 from "../block_components/Heading2";
+import Heading3 from "../block_components/Heading3";
+import Paragraph from "../block_components/Paragraph";
+import ListItem from "../block_components/ListItem";
+import Callout from "../block_components/Callout";
+import Image from "../block_components/Image";
 import "../global-style.css";
 import "./LayOutSandBox.css";
 import BLOCK_LAYOUT from "../BlocksEmun";
 import ProjectCoverView from "../Views/ProjectCoverView";
 import SuspenseStateView from "../Views/SuspenseStateView";
+import ProjectCollectionView from "../Views/ProjectCollectionView";
 
 function LayOutSandBox(props) {
 
@@ -44,9 +45,11 @@ function LayOutSandBox(props) {
 
     return (
         <div className="layout_sand_box container">
-            <SuspenseStateView loading={true}/>
-            <ProjectCoverView coverInfo = {coverInfo}/>
-            {props.model.projectsCollection.contentBlocks.map(blockRendererCB)}
+            <h1>Sandbox</h1>
+            <ProjectCollectionView collection = {props.model.projectsCollection}/>
+            {/* <SuspenseStateView loading={true}/> */}
+            {/* <ProjectCoverView coverInfo = {coverInfo}/> */}
+            {/* {props.model.projectsCollection.contentBlocks.map(blockRendererCB)} */}
         </div>
     )
 }

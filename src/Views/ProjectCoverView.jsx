@@ -1,8 +1,8 @@
 import "../global-style.css";
 import "./ProjectCoverView.css";
-import Heading1 from "./Heading1";
-import ListItem from "./ListItem";
-import Paragraph from "./Paragraph";
+import Heading1 from "../block_components/Heading1";
+import ListItem from "../block_components/ListItem";
+import Paragraph from "../block_components/Paragraph";
 
 
 export default function ProjectCoverView(props) {

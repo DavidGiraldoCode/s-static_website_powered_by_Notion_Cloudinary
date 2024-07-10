@@ -1,17 +1,17 @@
-import Heading1 from "./Heading1";
-import Heading2 from "./Heading2";
-import Heading3 from "./Heading3";
-import Paragraph from "./Paragraph";
-import ListItem from "./ListItem";
-import Callout from "./Callout";
-import Image from "./Image";
-import WhiteSpace from "./WhiteSpace";
+import Heading1 from "../block_components/Heading1";
+import Heading2 from "../block_components/Heading2";
+import Heading3 from "../block_components/Heading3";
+import Paragraph from "../block_components/Paragraph";
+import ListItem from "../block_components/ListItem";
+import Callout from "../block_components/Callout";
+import Image from "../block_components/Image";
+import WhiteSpace from "../block_components/WhiteSpace";
 import "../global-style.css";
 import "./ProjectExtendedInfoView.css";
 import BLOCK_LAYOUT from "../BlocksEmun";
 import ProjectCoverView from "./ProjectCoverView";
 import FixedHeaderView from "./FixedHeaderView";
-import Thanks from "./Thanks";
+import Thanks from "../block_components/Thanks";
 
 function ProjectExtendedInfoView(props) {
     const COVER_HEIGHT = 700;
