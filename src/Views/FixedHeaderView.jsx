@@ -18,7 +18,7 @@ export default function FixedHeaderView(props) {
                 backgroundColor: "var(--main-white)"
             });
         } else {
-            setPColor("rgba(255,255,255, 0.4)");
+            setPColor("rgba(255,255,255, 0.6)");
             setStyleConfig({
                 ...styleConfig,
                 backgroundColor: "transparent"
@@ -39,11 +39,15 @@ export default function FixedHeaderView(props) {
     return (
         <div className="fixed_header_view">
             <div className="header_top fixed_header_row" style={styleConfig}>
-                <p className="p-small" style={{color: pColor}}>David | Produt development & Design</p>
-                <p className="p-small" style={{color: pColor}}>{props.projectName}</p>
+                <p><a className="p-small" style={{ color: pColor }} href="https://drive.google.com/file/d/1yIITMes0aEZy8TvpibfzdE9LWwR-RPX4" target="blank">
+                    David | Go to Portfolio summary
+                </a></p>
+                <p className="p-small" style={{ color: pColor }}>{props.projectName}</p>
             </div>
             <div className="header_bottom fixed_header_row">
-                <p className="p-small">Portfolio</p>
+                <p><a className="p-small" href="https://drive.google.com/file/d/1mIyPfHizKI9VjQAgBO859mQib68xUbZE" target="blank">
+                    David | Download CV.pdf
+                </a></p>
                 <p className="p-small">2024</p>
             </div>
         </div>

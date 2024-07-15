@@ -172,7 +172,7 @@ div {}
 
 h1 {
     font-size: var(--fs-h1);
-    line-height: var(--lh-h1);
+    line-height: var(--lh-h3);
     /*2rem;*/
     font-style: normal;
     font-weight: 700;
