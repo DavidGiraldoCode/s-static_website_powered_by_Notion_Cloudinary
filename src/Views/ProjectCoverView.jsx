@@ -18,13 +18,15 @@ export default function ProjectCoverView(props) {
             {/*<img className="cover_image" src={props.coverInfo.coverImage} />*/}
             <div className="cover_row container">
                 <div className="cover_content_container left">
-                    <div className="m-bottom-s">
+                    {/* DEVLOG: Temporay solution, this display the date of the project
+                     <div className="m-bottom-s">
                         <p>
                             {props.coverInfo.date.split('-').join(" / ")}
                         </p>
-                    </div>
+                    </div> */}
                     <div className="m-bottom-l">
-                        <h1>
+                        <h1 className="callout_h1" id="h1_special_showcase_message">
+                            Tjena! Jag är David,<br/> 
                             {props.coverInfo.projectName}
                         </h1>
                     </div>

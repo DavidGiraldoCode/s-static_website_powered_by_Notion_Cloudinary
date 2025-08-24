@@ -52,6 +52,12 @@ ProjectCardView
 
 # Next steps
 - [x] Add Fixed labels on edges _david_, _portfolio_, _2024_
+- [x] Update font-family to Albert Sans
+- [x] *Update fixed header, and dates on fixed div at bottom
+- [x] **Create new layout for Showcase cover, no Date tag
+- [x] Change the copy on the loading view
+- [ ] Add link to How-to-find-me after the Ups! of a broken link
+- [ ] Date should be fecth from Date() or Notion
 - [ ] Review and refactor useEffect and useState on FixedHeadersView
 - [ ] Note that fixed header are on top of everything, disabling highlighting and clicking.
 - [x] Use custom domain `david.design` from porkhunt
@@ -93,4 +99,23 @@ export default notionConfig;
 ```
 https://www.npmjs.com/package/dotenv
 
+``` bash
+Shift + command = Previous README
+```
 
+## Having trouble with Firebase?
+
+```bash
+# Input
+firebase deploy
+#Output
+Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+
+# Input
+firebase hosting:sites:list
+#Output
+Error: Request to https://firebasehosting.googleapis.com/v1beta1/projects/notion-powered-cms/sites?pageToken=&pageSize=10 had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+
+# Firebase was not propertly logged in, force re-authentication with
+firebase login --reauth
+```
