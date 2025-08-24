@@ -53,8 +53,9 @@ ProjectCardView
 # Next steps
 - [x] Add Fixed labels on edges _david_, _portfolio_, _2024_
 - [x] Update font-family to Albert Sans
-- [ ] *Update fixed header, and dates on fixed div at bottom
+- [x] *Update fixed header, and dates on fixed div at bottom
 - [ ] **Create new layout for Showcase cover, no Date tag
+- [ ] Date should be fecth from Date() or Notion
 - [ ] Review and refactor useEffect and useState on FixedHeadersView
 - [ ] Note that fixed header are on top of everything, disabling highlighting and clicking.
 - [x] Use custom domain `david.design` from porkhunt

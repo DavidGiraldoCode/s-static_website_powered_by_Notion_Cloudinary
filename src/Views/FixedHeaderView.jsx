@@ -38,18 +38,21 @@ export default function FixedHeaderView(props) {
 
     return (
         <div className="fixed_header_view">
-            <div className="header_top fixed_header_row" style={styleConfig}>
-                <p><a className="p-small" style={{ color: pColor }} href="https://drive.google.com/file/d/1yIITMes0aEZy8TvpibfzdE9LWwR-RPX4" target="blank">
-                    David | Go to Portfolio summary
-                </a></p>
-                <p className="p-small" style={{ color: pColor }}>{props.projectName}</p>
-            </div>
-            <div className="header_bottom fixed_header_row">
+            <div className="header_top fixed_header_row">
                 <p><a className="p-small" href="https://drive.google.com/file/d/1mIyPfHizKI9VjQAgBO859mQib68xUbZE" target="blank">
-                    David | Download CV.pdf
+                    Get my resumé
                 </a></p>
-                <p className="p-small">2024</p>
+                <p className="p-small">Portfolio Shocase | 2025</p>
             </div>
+            {/* <div className="header_top fixed_header_row" style={styleConfig}>
+                <p>
+                    <a className="p-small" style={{ color: pColor }} href="https://drive.google.com/file/d/1yIITMes0aEZy8TvpibfzdE9LWwR-RPX4" target="blank">
+                        David | Go to Portfolio summary
+                    </a>
+                </p>
+                <p className="p-small" style={{ color: pColor }}>{props.projectName} </p>
+            </div> */}
+            {/* <div className="header_bottom fixed_header_row"> */}
         </div>
     )
 }
