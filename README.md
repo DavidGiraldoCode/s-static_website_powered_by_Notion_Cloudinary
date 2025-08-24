@@ -55,7 +55,8 @@ ProjectCardView
 - [x] Update font-family to Albert Sans
 - [x] *Update fixed header, and dates on fixed div at bottom
 - [x] **Create new layout for Showcase cover, no Date tag
-- [ ] Change the copy on the loading view
+- [x] Change the copy on the loading view
+- [ ] Add link to How-to-find-me after the Ups! of a broken link
 - [ ] Date should be fecth from Date() or Notion
 - [ ] Review and refactor useEffect and useState on FixedHeadersView
 - [ ] Note that fixed header are on top of everything, disabling highlighting and clicking.
