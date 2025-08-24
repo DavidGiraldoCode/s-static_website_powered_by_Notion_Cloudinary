@@ -72,6 +72,7 @@
     /* Define your preferred ratio */
 
     /* Define font sizes */
+    --fs-h0: 3.75rem;
     --fs-h1: 2.5rem;
     /* 2.25 * 16px = 36px */
     --fs-h2: 1.875rem;
@@ -181,13 +182,13 @@ h1 {
 }
 
 .callout_h1 {
-    font-size: var(--fs-h1);
-    line-height: var(--lh-h1);
+    font-size: var(--fs-h0);
+    /*line-height: var(--lh-h3);*/
     /*2rem;*/
     color: var(--main-white);
     font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
+    font-weight: 400; /*600 before the Showcase change*/
+    line-height: 95%; /*120% before the Showcase change*/
     letter-spacing: -0.03em;
 }
 
@@ -432,7 +433,7 @@ textarea:not(:placeholder-shown) {
     font-weight: var(--font-normal);
     line-height: 1.25rem;
 }
-
+/* m- stands for margin */
 .m-top-l {
     margin-top: var(--spacing-lx);
 }
