@@ -102,3 +102,20 @@ https://www.npmjs.com/package/dotenv
 ``` bash
 Shift + command = Previous README
 ```
+
+## Having trouble with Firebase?
+
+```bash
+# Input
+firebase deploy
+#Output
+Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+
+# Input
+firebase hosting:sites:list
+#Output
+Error: Request to https://firebasehosting.googleapis.com/v1beta1/projects/notion-powered-cms/sites?pageToken=&pageSize=10 had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+
+# Firebase was not propertly logged in, force re-authentication with
+firebase login --reauth
+```
