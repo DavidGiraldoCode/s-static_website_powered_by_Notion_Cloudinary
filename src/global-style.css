@@ -485,18 +485,24 @@ textarea:not(:placeholder-shown) {
         padding-right: var(--spacing-m);
     }
 
-    p {
-        font-size:      var(--fs-p1-mobile);
-        line-height:    var(--lh-h2);
+    .callout_h1 {
+        font-size: var(--fs-h2);
+        line-height: 100%;
+        letter-spacing: -0.05em;
     }
-
+    
     h1 {
-        font-size: var(--fs-h1-mobile);
+        font-size:   var(--fs-h1-mobile);
         line-height: var(--lh-h3);
     }
 
     h3 {
-        font-size: var(--fs-h3-mobile);
+        font-size:   var(--fs-h3-mobile);
         line-height: var(--lh-h3);
+    }
+
+    p {
+        font-size:      var(--fs-p1-mobile);
+        line-height:    var(--lh-h2);
     }
 }
