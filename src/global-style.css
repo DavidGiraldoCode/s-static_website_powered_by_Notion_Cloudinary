@@ -182,6 +182,23 @@ align-self = "this one child does its own thing"
 .text_column{
     width: 800px;
 }
+/*
+These styles two_text_columns and sub_text_column, are meant create a two
+column section or the content. But this requires changes in the rendering
+order of the html tags. TODO.
+*/ 
+
+.two_text_columns{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: start;
+}
+.sub_text_column{
+    width: 400px;
+}
+/*========================================================================*/
 
 /*
   align-self: https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
@@ -222,14 +239,11 @@ h2 {
 }
 
 h3 {
+    color: var(--grey-3);
     font-size: var(--fs-h3);
-    /*1.125rem*/
-    line-height: var(--lh-h3);
-    /*1.5rem*/
-
-    color: var(--main-black);
     font-style: normal;
     font-weight: 400;
+    line-height: var(--lh-h3);
 }
 
 h4 {
@@ -244,18 +258,17 @@ h4 {
 }
 
 p {
-    letter-spacing: normal;
-    font-family: "Lato", sans-serif;
+    color: var(--grey-3);
     font-size: var(--fs-p1);
-    /*0.875rem*/
-    line-height: var(--lh-p1);
-    /*1.25rem*/
     font-style: normal;
     font-weight: 400;
+    letter-spacing: normal;
+    line-height: var(--lh-p1);
+    /*0.875rem*/
+    /*1.25rem*/
 }
 li {
     letter-spacing: normal;
-    font-family: "Lato", sans-serif;
     font-size: var(--fs-p1);
     /*0.875rem*/
     line-height: var(--lh-p1);
@@ -266,7 +279,6 @@ li {
 }
 
 label {
-    font-family: 'Lato', sans-serif;
     font-size: var(--fs-label);
     /*0.875rem*/
     line-height: var(--lh-label);
@@ -278,7 +290,6 @@ label {
 }
 
 .p-small {
-    font-family: 'Lato', sans-serif;
     font-size: var(--fs-label);
     /*0.75rem*/
     line-height: var(--lh-p1);
