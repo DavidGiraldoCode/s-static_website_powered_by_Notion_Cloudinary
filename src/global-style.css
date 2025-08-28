@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Media Queries at the bottom of the file */
+
 * {
     box-sizing: border-box;
     touch-action: manipulation;
@@ -50,7 +52,7 @@
 
     --font-normal: 400;
 
-    --spacing-xs: 4px;
+    --spacing-xs: 4px; /**/
     --spacing-s: 8px;
     --spacing-m: 16px;
     --spacing-l: 24px;
@@ -74,13 +76,16 @@
     /* Define font sizes */
     --fs-h0: 3.75rem;
     --fs-h1: 2.5rem;
+    --fs-h1-mobile: 2rem;
     /* 2.25 * 16px = 36px */
     --fs-h2: 1.875rem;
     /* 1.875 * 16px = 30px */
     --fs-h3: 1.5rem;
+    --fs-h3-mobile: 1.45rem;
     /* 1.5 * 16px = 24px */
     --fs-h4: 1rem; /* 1.125 * 16px = 18px */
     --fs-p1: 1rem; /* 1.125 * 16px = 18px */
+    --fs-p1-mobile: 1.1rem; /* 1.125 * 16px = 18px */
     --fs-label: 0.9rem; /* 0.625 * 16px = 10px */
     --fs-button-label: 1rem; /* 1 * 16px = 16px */
 
@@ -469,4 +474,29 @@ textarea:not(:placeholder-shown) {
     position: absolute;
     bottom: 0rem;
     width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+
+    .text_column{
+        width: 100%;
+        padding-left:  var(--spacing-m);
+        padding-right: var(--spacing-m);
+    }
+
+    p {
+        font-size:      var(--fs-p1-mobile);
+        line-height:    var(--lh-h2);
+    }
+
+    h1 {
+        font-size: var(--fs-h1-mobile);
+        line-height: var(--lh-h3);
+    }
+
+    h3 {
+        font-size: var(--fs-h3-mobile);
+        line-height: var(--lh-h3);
+    }
 }
