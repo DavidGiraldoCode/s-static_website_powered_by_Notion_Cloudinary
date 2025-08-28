@@ -45,7 +45,7 @@
 
     --grey-1: #DFDFDF;
     --grey-2: rgb(203, 203, 203);
-    --grey-3: #807F80;
+    --grey-3: #606060;
     --grey-4: #3f3f3f;
     --grey-5: #F5F5F5;
     --grey-6: #d4d4d4;
@@ -239,7 +239,7 @@ h2 {
 }
 
 h3 {
-    color: var(--grey-3);
+    color: var(--primary-color);
     font-size: var(--fs-h3);
     font-style: normal;
     font-weight: 400;

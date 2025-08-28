@@ -7,7 +7,7 @@ export default function Thanks(props) {
                 {/* <h1 className="callout_h1">
                     {props.message}
                     </h1>  */}
-                <p className="p-small">Made in Sweden by a Colombian ☕️</p>
+                <p className="p-small">Utvecklad i Stockholm av en colombian</p>
                 <p className="p-small">© 2025 David Giraldo</p>
             </div>
         </div>
