@@ -50,9 +50,9 @@ function ProjectExtendedInfoView(props) {
             <FixedHeaderView projectName={coverInfo.projectName} coverHeight={COVER_HEIGHT}/>
             <ProjectCoverView coverInfo={coverInfo} />
             {props.projectsCollection.contentBlocks.map(blockRendererCB)}
-            <WhiteSpace />
-            <Thanks/>
-            <WhiteSpace />
+            {/* <WhiteSpace /> */}
+            <Thanks message = {"Lets build something"}/>
+            {/* <WhiteSpace /> */}
         </div>
     )
 }

@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Media Queries at the bottom of the file */
+
 * {
     box-sizing: border-box;
     touch-action: manipulation;
@@ -43,14 +45,14 @@
 
     --grey-1: #DFDFDF;
     --grey-2: rgb(203, 203, 203);
-    --grey-3: #807F80;
+    --grey-3: #606060;
     --grey-4: #3f3f3f;
     --grey-5: #F5F5F5;
     --grey-6: #d4d4d4;
 
     --font-normal: 400;
 
-    --spacing-xs: 4px;
+    --spacing-xs: 4px; /**/
     --spacing-s: 8px;
     --spacing-m: 16px;
     --spacing-l: 24px;
@@ -74,13 +76,16 @@
     /* Define font sizes */
     --fs-h0: 3.75rem;
     --fs-h1: 2.5rem;
+    --fs-h1-mobile: 2rem;
     /* 2.25 * 16px = 36px */
     --fs-h2: 1.875rem;
     /* 1.875 * 16px = 30px */
     --fs-h3: 1.5rem;
+    --fs-h3-mobile: 1.45rem;
     /* 1.5 * 16px = 24px */
     --fs-h4: 1rem; /* 1.125 * 16px = 18px */
     --fs-p1: 1rem; /* 1.125 * 16px = 18px */
+    --fs-p1-mobile: 1.1rem; /* 1.125 * 16px = 18px */
     --fs-label: 0.9rem; /* 0.625 * 16px = 10px */
     --fs-button-label: 1rem; /* 1 * 16px = 16px */
 
@@ -160,10 +165,40 @@ body {
     margin: 0;
     overflow: hidden;
 }
+/*
+justify-content = main axis (row ↔ / column ↕)
+align-items = cross axis (the other direction)
+align-self = "this one child does its own thing"
+*/
+.row {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center; /*flex-start;*/
+}
+.text_row{
+}
 
 .text_column{
     width: 800px;
 }
+/*
+These styles two_text_columns and sub_text_column, are meant create a two
+column section or the content. But this requires changes in the rendering
+order of the html tags. TODO.
+*/ 
+
+.two_text_columns{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: start;
+}
+.sub_text_column{
+    width: 400px;
+}
+/*========================================================================*/
 
 /*
   align-self: https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
@@ -204,14 +239,11 @@ h2 {
 }
 
 h3 {
+    color: var(--primary-color);
     font-size: var(--fs-h3);
-    /*1.125rem*/
-    line-height: var(--lh-h3);
-    /*1.5rem*/
-
-    color: var(--main-black);
     font-style: normal;
     font-weight: 400;
+    line-height: var(--lh-h3);
 }
 
 h4 {
@@ -226,18 +258,17 @@ h4 {
 }
 
 p {
-    letter-spacing: normal;
-    font-family: "Lato", sans-serif;
+    color: var(--grey-3);
     font-size: var(--fs-p1);
-    /*0.875rem*/
-    line-height: var(--lh-p1);
-    /*1.25rem*/
     font-style: normal;
     font-weight: 400;
+    letter-spacing: normal;
+    line-height: var(--lh-p1);
+    /*0.875rem*/
+    /*1.25rem*/
 }
 li {
     letter-spacing: normal;
-    font-family: "Lato", sans-serif;
     font-size: var(--fs-p1);
     /*0.875rem*/
     line-height: var(--lh-p1);
@@ -248,7 +279,6 @@ li {
 }
 
 label {
-    font-family: 'Poppins', sans-serif;
     font-size: var(--fs-label);
     /*0.875rem*/
     line-height: var(--lh-label);
@@ -260,7 +290,6 @@ label {
 }
 
 .p-small {
-    font-family: 'Poppins', sans-serif;
     font-size: var(--fs-label);
     /*0.75rem*/
     line-height: var(--lh-p1);
@@ -469,4 +498,35 @@ textarea:not(:placeholder-shown) {
     position: absolute;
     bottom: 0rem;
     width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+
+    .text_column{
+        width: 100%;
+        padding-left:  var(--spacing-m);
+        padding-right: var(--spacing-m);
+    }
+
+    .callout_h1 {
+        font-size: var(--fs-h2);
+        line-height: 100%;
+        letter-spacing: -0.05em;
+    }
+    
+    h1 {
+        font-size:   var(--fs-h1-mobile);
+        line-height: var(--lh-h3);
+    }
+
+    h3 {
+        font-size:   var(--fs-h3-mobile);
+        line-height: var(--lh-h3);
+    }
+
+    p {
+        font-size:      var(--fs-p1-mobile);
+        line-height:    var(--lh-h2);
+    }
 }

@@ -4,7 +4,7 @@ export default function Paragraph(props) {
     return (
         <div className="paragraph container m-bottom-m">
             <div className="text_column">
-                <p>
+                <p className="">
                     {props.text}
                 </p>
             </div>
