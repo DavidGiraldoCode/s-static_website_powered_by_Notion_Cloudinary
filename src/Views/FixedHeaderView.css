@@ -4,7 +4,7 @@
     justify-content: space-between;
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     color: var(--grey-3);
 }
 .fixed_header_row{

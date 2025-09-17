@@ -57,7 +57,7 @@ ProjectCardView
 - [ ] Add link to How-to-find-me after the Ups! of a broken link
 - [ ] Date should be fecth from Date() or Notion
 - [ ] Review and refactor useEffect and useState on FixedHeadersView
-- [ ] Note that fixed header are on top of everything, disabling highlighting and clicking.
+- [x] Note that fixed header are on top of everything, disabling highlighting and clicking.
 - [x] Add Fixed labels on edges _david_, _portfolio_, _2024_
 - [x] Update font-family to Albert Sans
 - [x] *Update fixed header, and dates on fixed div at bottom
