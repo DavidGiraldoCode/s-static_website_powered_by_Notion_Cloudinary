@@ -126,6 +126,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+  background: var(--accent-color) ; /* highlight color e.g. #16d950 */
+  color: var(--main-white);         /* text color when selected e.g. #fff*/
+}
+::-moz-selection::selection {
+  background: var(--accent-color) ; /* highlight color e.g. #16d950 */
+  color: var(--main-white);         /* text color when selected e.g. #fff*/
+}
+
+
+
+
 body {
     /*font-family: "Kaisei Decol", serif;*/
     font-family: "Albert Sans", serif;
