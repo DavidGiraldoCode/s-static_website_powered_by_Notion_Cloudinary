@@ -1,3 +1,6 @@
+/* ====================================
+   FIXED HEADER CONTAINER
+   ==================================== */
 .fixed_header_view{
     display: flex;
     flex-direction: column;
@@ -7,17 +10,37 @@
     /* height: 100vh; */
     color: var(--grey-3);
 }
+
 .fixed_header_row{
-    padding-top: var(--spacing-m);
-    padding-bottom: var(--spacing-m);
-    padding-right: var(--spacing-l);
+    padding-top: var(--spacing-s);
+    padding-bottom: var(--spacing-s);
+    padding-right: var(--spacing-m);
     padding-left: var(--spacing-m);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+
+    text-transform: uppercase;
+}
+.fixed_header_row a{
+    text-decoration-line: none; 
 }
 
-.fixed_header_view .header_top p{
-    /* color: rgba(255,255,255, 0.4); */
-    /* background-color: var(--main-white); */
+.left_header{
+    justify-content: flex-start;
+    gap: var(--spacing-l);
+}
+
+.right_header{
+    justify-content: flex-end;
+    gap: var(--spacing-l);
+}
+
+/* ====================================
+   HEADER TOP SECTION
+   ==================================== */
+.fixed_header_view {
+    /* Transition for smooth background color change on scroll */
+    transition: background-color 0.3s ease;
 }
