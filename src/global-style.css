@@ -234,7 +234,7 @@ h1 {
     /*2rem;*/
     color: var(--main-white);
     font-style: normal;
-    font-weight: 400; /*600 before the Showcase change*/
+    font-weight: 200; /*600 before the Showcase change*/
     line-height: 95%; /*120% before the Showcase change*/
     letter-spacing: -0.03em;
 }
@@ -498,6 +498,11 @@ textarea:not(:placeholder-shown) {
 .m-bottom-s {
     margin-bottom: var(--spacing-s);
 }
+
+.m-right-s {
+    margin-right: var(--spacing-s);
+}
+
 
 /*Fixed positions*/
 .fixed-top {

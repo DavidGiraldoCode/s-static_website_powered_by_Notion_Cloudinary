@@ -1,0 +1,17 @@
+.heading_3 .text_column{
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-color: var(--grey-1);
+}
+
+/* CHANGE START: Remove border when heading has multiple lines */
+.heading_3 .text_column.no-border {
+    border-bottom-style: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .heading_3 .text_column{
+        border-bottom-style: none;
+    }
+}
