@@ -8,7 +8,11 @@ import ProjectExtendedInfoView from "../Views/ProjectExtendedInfoView";
 function ProjectExtendedInfoPresenter(props) {
     const { id, key } = useParams();
 
-    const URL = `https://s-nodejs-serverless-func-notion-cms.vercel.app/api/project?id=${id}${key != undefined ? "&key=" + key : "&key"}`;
+    // TODO
+    const portfolioShowcaseURL = props.model.portfolioShowcaseURL;
+    const URL = `https://s-nodejs-serverless-func-notion-cms.vercel.app/api/project?id=${id != undefined ? id : portfolioShowcaseURL}${key != undefined ? "&key=" + key : "&key"}`;
+    //
+
     console.log(`Fetching from: ${URL}`);
     async function getProject() {
         const response = await fetch(URL);

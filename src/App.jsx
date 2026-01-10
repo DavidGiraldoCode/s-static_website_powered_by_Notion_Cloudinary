@@ -30,10 +30,10 @@ function App(props) {
   function makeRouter(model) {
     //TODO createBrowserRouter
     return createHashRouter([
-      {
-        path: "/",
-        element: <ProjectCollectionPresenter collection={model?.projectsCollection} />,
-      },
+      // {
+      //   path: "/",
+      //   element: <ProjectCollectionPresenter collection={model?.projectsCollection} />,
+      // },
       {
         path: "/project/:id",
         element: <ProjectExtendedInfoPresenter model={model} />,
@@ -46,6 +46,11 @@ function App(props) {
         path: "/project/sanbox",
         element: <LayOutSandBox model={model} />,
       },
+      //TODO improve Burned-in URL
+      {
+        path: "/",
+        element: <ProjectExtendedInfoPresenter model={model} />,
+      }
     ]);
   }
 
