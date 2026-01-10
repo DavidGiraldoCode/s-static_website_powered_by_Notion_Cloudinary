@@ -5,3 +5,7 @@
     width: 100%;
     overflow: hidden;
 }
+
+.image_column img{
+    border-radius: var(--spacing-l);
+}

@@ -51,12 +51,12 @@ ProjectCardView
 ```
 
 # Backlog
-- [ ] Create two-column text format, this requires changes rendering
 - [ ] Add fed-in animation for every content section
-- [ ] Add social media
-- [ ] Add link to How-to-find-me after the Ups! of a broken link
 - [ ] Date should be fecth from Date() or Notion
-- [ ] Review and refactor useEffect and useState on FixedHeadersView
+- [x] Create two-column text format, this requires changes rendering
+- [x] Add social media
+- [x] Add link to How-to-find-me after the Ups! of a broken link
+- [x] Review and refactor useEffect and useState on FixedHeadersView
 - [x] Note that fixed header are on top of everything, disabling highlighting and clicking.
 - [x] Add Fixed labels on edges _david_, _portfolio_, _2024_
 - [x] Update font-family to Albert Sans
@@ -75,20 +75,20 @@ ProjectCardView
 - [x] Research about implementing the [API and Functions](https://youtu.be/yLMODEUPJdU?si=YQ2nGSrJl3VbVOGo) on Vercel, here some links: [REST API](https://vercel.com/docs/rest-api) and [Functions API Reference](https://vercel.com/docs/functions/functions-api-reference).
 
 # DevLog
+- Images are now responsive, due to the fact that the size is driven by the file name, the component uses UseEffect to update
+- H3 renders a bottom border if the text has a single line
 - Trying TankStack
 `npm i @tanstack/react-query`
 `npm i @tanstack/react-query-devtools`
 `react-router-dom`
 - 24 06 2024: Vercel API is working. I can retrieve a list of projects and a project content. This program knows nothing about Notion. Vercel serverless function handels that implementation.
 - 12 06 2024: Created integration with Vercel: They offer a template with Node.js. The process creates a private repo on my GitHub and deploys it to the web. The source code is written in TypeScript.
-
 - Steps:
 - Created /app directory
 - Added index.ts, and included code.
 - Installed Express
 - Added vercel.json
 - deploy locally
-
 - Got a CORS error when trying to request a database, the Notion team [replied](https://github.com/makenotion/notion-sdk-js/issues/458#issuecomment-1743915685) to this matter:
 >"Due to security concerns of exposing API tokens in the browser, Notion public API requests aren't able to be made from a web browser. You'll have to make the requests server side and then send the results to the browser. Apologies for any inconvenience."
 - Created the Notion page as an empty (fullpage) database, [here they explain how to query it](https://developers.notion.com/reference/retrieve-a-database).

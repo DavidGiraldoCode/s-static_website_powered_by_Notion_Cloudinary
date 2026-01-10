@@ -25,7 +25,7 @@ function ProjectCollectionPresenter(props) {
 
     return <div className="project_collection_presenter">
         <h1>Project Collection Presenter</h1>
-        {/*props?.collection.map(buildGrid)*/}
+        {props?.collection.map(buildGrid)}
     </div>
 }
 

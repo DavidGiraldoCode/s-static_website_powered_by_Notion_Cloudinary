@@ -30,3 +30,10 @@
 #h1_special_showcase_message{
     height: 300px;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .cover_image{
+        width: 620px;
+    }
+}
