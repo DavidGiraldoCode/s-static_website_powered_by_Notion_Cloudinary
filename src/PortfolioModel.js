@@ -8,6 +8,9 @@ class PortfolioModel {
     projectOnFocus = null; // is then set to ProjectExtendedInfo
     projectsCollection = null;
 
+    // Burned-in URL to make the visible URL more readable
+    portfolioShowcaseURL = "2e2e6124750480608442d8de8e507946"
+
     constructor() {
         //this.projectsCollection = this.requestProjectCollection();
     }
