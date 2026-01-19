@@ -22,10 +22,14 @@ export default function SuspenseStateView(props) {
         return (
             <div className="suspense_state_view"> 
                 <h1>Förlåt (sorry)!</h1>
-                <Paragraph text={"Something went wrong, try to reload or checkout my other links"} />
+                <p>
+                    Something went wrong, try to reload or checkout my other links
+                </p>
+                <br></br>
                 <div className="gif_mask">
                     <iframe className="giphy-embed" frameBorder={0} src="https://giphy.com/embed/GRk3GLfzduq1NtfGt5"></iframe>
                 </div>
+                <br></br>
                 <div className="row ">
                     <p className="m-right-s">
                         <a className="p-small" href="https://drive.google.com/file/d/1mIyPfHizKI9VjQAgBO859mQib68xUbZE" target="blank">

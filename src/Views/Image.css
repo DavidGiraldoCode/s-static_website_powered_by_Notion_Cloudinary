@@ -9,3 +9,107 @@
 .image_column img{
     border-radius: var(--spacing-l);
 }
+
+/**
+ * FADE-IN ANIMATION STYLES
+ * 
+ * TWO-CLASS SYSTEM:
+ * 1. .image-fade = initial state + transition definition
+ * 2. .image-visible = final state (applied by JS)
+ */
+
+/**
+ * INITIAL STATE
+ * 
+ * Applied immediately when image renders
+ * Before it enters viewport
+ * 
+ * opacity: 0
+ *   - Completely transparent (invisible)
+ * 
+ * transform: translateY(20px)
+ *   - Shifted 20px DOWN from final position
+ *   - Creates "slide up while fading" effect
+ *   - Remove this line for pure fade (no movement)
+ * 
+ * transition: all 0.8s ease-out
+ *   - DURATION: 0.8s (adjust for faster/slower: 0.4s - 1.2s)
+ *   - EASING: ease-out (starts fast, ends slow)
+ *   - Alternative easings:
+ *     - ease-in: slow start, fast end
+ *     - ease-in-out: slow start AND end
+ *     - cubic-bezier(0.4, 0, 0.2, 1): custom curve
+ * 
+ * WHY "all"?
+ * - Animates both opacity AND transform together
+ * - Could be specific: "opacity 0.8s, transform 0.8s"
+ */
+.image-fade {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: all 0.8s ease-out;
+}
+
+/**
+ * FINAL STATE
+ * 
+ * Applied by JavaScript when image enters viewport
+ * Browser automatically animates from .image-fade to .image-visible
+ * 
+ * opacity: 1
+ *   - Fully visible
+ * 
+ * transform: translateY(0)
+ *   - Returns to original position
+ *   - Combined with opacity creates smooth reveal
+ * 
+ * HOW IT WORKS:
+ * 1. Image loads with opacity: 0, translateY(20px)
+ * 2. User scrolls, image enters viewport
+ * 3. JS adds 'image-visible' class
+ * 4. Browser sees opacity changed from 0→1, translateY changed 20px→0
+ * 5. Browser animates over 0.8s using ease-out timing
+ * 6. Result: Image fades in while sliding up slightly
+ */
+.image-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/**
+ * ALTERNATIVE CONFIGURATIONS:
+ * 
+ * Fade only (no slide):
+ * .image-fade {
+ *     opacity: 0;
+ *     transition: opacity 0.8s ease-out;
+ * }
+ * .image-visible {
+ *     opacity: 1;
+ * }
+ * 
+ * Slide from left:
+ * .image-fade {
+ *     opacity: 0;
+ *     transform: translateX(-30px);
+ *     transition: all 0.8s ease-out;
+ * }
+ * 
+ * Scale up while fading:
+ * .image-fade {
+ *     opacity: 0;
+ *     transform: scale(0.95);
+ *     transition: all 0.8s ease-out;
+ * }
+ * 
+ * Blur effect (experimental, GPU intensive):
+ * .image-fade {
+ *     opacity: 0;
+ *     filter: blur(10px);
+ *     transition: all 1s ease-out;
+ * }
+ * .image-visible {
+ *     opacity: 1;
+ *     filter: blur(0);
+ * }
+ */
